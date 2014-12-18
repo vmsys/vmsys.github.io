@@ -44,7 +44,8 @@ var user_name = get_cookie("user_cookie")
 if (!user_name) {
 
     // If not, prompt for the name
-    user_name = prompt("Please enter your first name:","")
+    //user_name = prompt("Please enter your first name:","")
+    user_name = "朋友"
     
     // Set the cookie
     document.cookie = "user_cookie=" + escape(user_name)
@@ -64,6 +65,7 @@ else {
 
     // Otherwise, increment the visit number
     visit_number++
+    //document.writeln("欢迎 " + user_name + "再次作客. 这是你的第 " + visit_number + "次访问.")
     document.writeln("欢迎 " + user_name + "再次作客. 这是你的第 " + visit_number + "次访问.")
 }
 
