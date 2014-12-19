@@ -9,10 +9,18 @@
 <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
 <title>Home Page</title>
+<script type="text/javascript">
+  var audio = document.createElement("audio");
+  if (audio != null && audio.canPlayType && audio.canPlayType("audio/mp3"))
+  {
+    audio.src = "audio/aryx.ogg";
+    audio.play();
+  }
+  // <audio src="audio/aryx.ogg" autoplay> </audio>
+</script>
 </head>
 
 <body>
-<bgsound autostart=true loop="infinite" src="http://qzone.haoduoge.com/music2/2014-09-04/1409822661.mp3"/>
 <header>
   <div class="container">
     <h1>博客</h1>
@@ -37,7 +45,6 @@
     <a href="">音乐</a>
     <a href="">视频</a>
     <a href="flash/index.html">游戏</a>
-    <a href="game/Fly.html">游戏</a>
   </pre>
 </div>
 </div>
