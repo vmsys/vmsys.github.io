@@ -4,7 +4,93 @@
 </head>
 
 <body>
-123
+<script language="JavaScript" type="text/javascript">
+<!--
+
+function get_cookie(name_to_get) {
+
+    var cookie_pair
+    var cookie_name
+    var cookie_value
+    
+    // Split all the cookies into an array
+    var cookie_array = document.cookie.split("; ")
+    
+    // Run through the cookies
+    for (counter = 0; counter < cookie_array.length; counter++) {
+    
+        // Split the cookie into a name/value pair
+        cookie_pair = cookie_array[counter].split("=")
+        cookie_name = cookie_pair[0]
+        cookie_value = cookie_pair[1]
+        
+        // Compare the name with the name we want
+        if (cookie_name == name_to_get) {
+        
+            // If this is the one, return the value
+            return unescape(cookie_value)
+        }
+    }
+    
+    // If the cookie doesn't exist, return null
+    return null
+}
+
+// Get the user_name cookie
+var user_name = get_cookie("user_cookie")
+
+// Did the cookie exist?
+if (!user_name) {
+
+    // If not, prompt for the name
+    //user_name = prompt("Please enter your first name:","")
+    user_name = "yoyou"
+    
+    // Set the cookie
+    document.cookie = "user_cookie=" + escape(user_name)
+}
+
+// Get the count cookie
+var visit_number = get_cookie("count_cookie")
+
+// Did the cookie exist?
+if (!visit_number) {
+
+    // If not, then this is the user's first visit
+    visit_number = 1
+    //document.writeln("欢迎 " + user_name + ". 这是你的第一次访问.")
+    document.writeln("欢迎 " + "新朋友" + ". 这是你的第一次访问.")
+}
+else {
+
+    // Otherwise, increment the visit number
+    visit_number++
+    //document.writeln("欢迎 " + "老朋友" + "再次作客. 这是你的第 " + visit_number + "次访问.")
+    document.writeln("欢迎 " + "老朋友" + "再次作客. 这是你的第 " + visit_number + "次访问.")
+}
+// Set the cookies
+document.cookie = "count_cookie=" + visit_number
+
+
+//-->
+</script>
+<input type="text" readonly="true" value="3秒后跳转..." id="time"  style="color:#6699ee;border:1px;border-bottom-style:none;border-top-style:none;border-left-style:none;border-right-style:none;"> 
+
+<script language="javascript"> 
+var t = 600; 
+var time = document.getElementById("time"); 
+function fun(){ 
+t--; 
+time.value = t+"秒后跳转..."; 
+if(t<=0){ 
+location.href = "index.html"; 
+clearInterval(inter); 
+} 
+} 
+var inter = setInterval("fun()",1000); 
+</script> 
+
+
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -12,7 +98,7 @@
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = false;
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
