@@ -7,7 +7,7 @@ $(function(){
       var top=topScroll+parseInt(topDiv);
       timer=setInterval(function(){
         //$(".test").css("top", top+"px");
-        $(".scrolldiv").animate({"top":top},50);
+        $(".scrolldiv").animate({"top":top},500);
         },500)
       })
     })
