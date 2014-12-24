@@ -1,0 +1,5 @@
+/*测试用的高度*/ 
+body{ height:3000px;} 
+div,ul,li,body{margin:0; padding:0;} 
+/*position:absolute;用于元素的定位*/ 
+#roll{width:50px; height:100px; background:#99CC00; position:absolute;} 
