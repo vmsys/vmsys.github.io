@@ -1,6 +1,7 @@
 ﻿@charset "utf-8";
 /* CSS Document */
 ul, li { list-style:none; padding:0; margin:0; }
+.DreambackMusicPlayer { height: 40px; position: relative; width: 490px; position: relative; margin: 0px auto 0; }
 #MusicPlayer, #PlayBtn, #PrevBtn, #NextBtn, #FullProgressBar, #LoadProgressBar, #PlayProgressBar, #CurrentPlay, #SoundBtn, #SoundBar, #CurSoundBar, #DownLoadBtn, #CurSound { background-image: url(../images/skin-png24.png); }
 #MusicPlayer { height: 40px; width: 490px; background-position: 0 0; position: relative; z-index: 2; }
 #PlayBtn, #PrevBtn, #NextBtn { width: 20px; height: 20px; overflow: hidden; display: inline-block; margin-left: 8px; margin-top: 11px; float: left; }
