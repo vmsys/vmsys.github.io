@@ -3,7 +3,7 @@ $(function(){
     $(window).scroll(function(){
       clearInterval(timer);
       var topScroll=getScroll();
-      var topDiv="100px";
+      var topDiv="0px";
       var top=topScroll+parseInt(topDiv);
       timer=setInterval(function(){
         //$(".test").css("top", top+"px");
