@@ -5,6 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <title>Home Page</title>
   <link rel="stylesheet" type="text/css" href="mplayer/css/style.css">
+
+  <style type="text/css">
+    .scrolldiv
+    {
+      width:100px;
+      height:200px;
+      position:absolute;
+      top:300px;
+    }
+  </style>
+  <script type="text/javascript" src="javascripts/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/scrolldiv.js"></script>
 </head>
 <body background="image/background.jpg">
   <div id="header">
@@ -13,7 +25,7 @@
   </div>
   <div id="content" style="float:left">
     <!-- 代码开始 -->
-    <div style="float:left">
+    <div style="float:left" class="scrolldiv">
       <div id="player"></div>
       <div class="DreambackMusicPlayer">
         <div id="MusicPlayer">
