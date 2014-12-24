@@ -20,7 +20,7 @@ a:hover{color:#0b638e; text-decoration:none}/*ff7200*/
 .qust_contach ul li span.icon{_margin-left:-45px;}
 
 .pst_re{ position:relative}
-.qust_contach{ background:#555; border:#fff 1px solid; width:525px; height:400px; padding:1px 5px 10px; font-size:12px; line-height:18px; position:absolute; right:5px; top:100px; z-index:9999;
+.qust_contach{ background:#555; border:#fff 1px solid; width:525px; height:400px; padding:1px 5px 10px; font-size:12px; line-height:18px; position:absolute; right:5px; top:15px; z-index:9999;
 -webkit-box-shadow: 0 0px 7px rgba(0,0,0,0.3);
    -moz-box-shadow: 0 0px 7px rgba(0,0,0,0.3);
 	    box-shadow: 0 0px 7px rgba(0,0,0,0.3);}
@@ -64,5 +64,5 @@ a.back_top:hover,.qust_contach ul li:hover .back_top{ background-position:-342px
    -moz-box-shadow: 0 0px 7px rgba(0,0,0,0.3);
 	    box-shadow: 0 0px 7px rgba(0,0,0,0.3); text-align:center;font-size:15px; line-height:18px;
 		-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
-.qust_show span.server{background-position:-1px -363px;width:30px; height:30px; display:inline-block; }
+.qust_show span.server{background-position:-1px -363px;width:30px; height:10px; display:inline-block; }
 .qust_show:hover{ background:#e7edef;}
