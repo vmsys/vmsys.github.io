@@ -8,7 +8,7 @@ $(function () {
 			st = document.body.scrollTop;
 		}
 		
-		var contactTop = $(".qust_contach").offset().top;
+		var contactTop = $(".qust_contach").offset().top+100;
 		var height = $(".qust_contach").height();
 		
 		if ( st>80) {
@@ -54,7 +54,7 @@ $(function () {
 		var height = $(".qust_show").height();
 		
 		if ( st>80) {
-			var top = (document.documentElement.clientHeight  - height)/2+st -280;
+			var top = (document.documentElement.clientHeight  - height)/2+st -80;
 			
 			$(".qust_show").stop().animate(
 				{
