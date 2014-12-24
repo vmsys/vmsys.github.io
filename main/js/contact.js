@@ -7,8 +7,8 @@ $(function () {
 		} else if (document.body) {
 			st = document.body.scrollTop;
 		}
-		
-		var contactTop = $(".qust_contach").offset().top+100;
+	st=st+200;	
+		var contactTop = $(".qust_contach").offset().top;
 		var height = $(".qust_contach").height();
 		
 		if ( st>80) {
