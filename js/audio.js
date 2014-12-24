@@ -14,7 +14,7 @@ else x=snd10
 var audio = document.createElement("audio");
 if (audio != null && audio.canPlayType && audio.canPlayType("audio/mp3"))
 {
-  audio.src = x;
+  audio.src = snd2;
   audio.loop = "loop";
   audio.control = "control";
   audio.play();
