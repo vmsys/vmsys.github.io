@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>娱乐圈</title>
+  <link href="main/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="mplayer/css/style.css">
+  <style type="text/css">
+  .transparent_class {   
+        filter:alpha(opacity=50);   
+        -moz-opacity:0.5;   
+        -khtml-opacity: 0.5;   
+        opacity: 0.5;   
+  } 
+  </style>
+</head>
+
+<body background="image/background.jpg">
+<!-- 代码 开始 -->
+<div class="qust_contach" > <a href="javascript:void(0);" class="qst_close icon">&nbsp;</a> <br class="clear">
+    <!-- 代码开始 -->
+      <div id="player"></div>
+      <div class="DreambackMusicPlayer">
+        <div id="MusicPlayer">
+          <div id="PlayBtn" class="play" title="暂停"></div>
+          <div id="PrevBtn" title="上一曲"></div>
+          <div id="NextBtn" title="下一曲"></div>
+          <div id="TimeBar"> <span id="CurTime">00:00</span>/<span id="TotalTime">00:00</span> </div>
+          <div id="FullProgressBar">
+            <div id="LoadProgressBar" style="width:0;"></div>
+            <div id="PlayProgressBar" style="width:0;"></div>
+            <div id="CurrentPlay" style="top:-5px;left:-10px;"></div>
+          </div>
+          <div id="SoundBtn"></div>
+          <div id="SoundBar">
+            <div id="CurSoundBar" style="width:25px;"></div>
+            <div id="CurSound" style="top:-7px;left:15px;"></div>
+          </div>
+          <a href="" target="_blank" id="DownLoadBtn" title="下载"></a> </div>
+        <div id="MusicList">
+          <ul>
+            <li> <textarea>http://www.qinfu168.com/uploads/video/爱我别走.mp3</textarea> 爱我别走-张震岳</li>
+            <li> <textarea>http://ting.baidu.com/data/music/file?link=http://zhangmenshiting.baidu.com/data2/music/1658207/15803401346727661.mp3?xcode=44001cdc1d2852c31d07286be822d843</textarea> road trip-darin</li>
+            <li> <textarea>http://www.qinfu168.com/uploads/video/城市稻草人.mp3</textarea> 城市稻草人</li>
+            <li> <textarea>http://www.qinfu168.com/uploads/video/大城小爱.mp3</textarea> 大城小爱-王力宏</li>
+            <li> <textarea>http://www.qinfu168.com/uploads/video/开不了口.mp3</textarea> 开不了口-周杰伦</li>
+            <li> <textarea>http://www.qinfu168.com/uploads/video/恋人未满.mp3</textarea> 恋人未满-S.H.E</li>
+            <li> <textarea>http://www.qinfu168.com/uploads/video/他一定很爱你.mp3</textarea> 他一定很爱你-阿杜</li>
+            <li> <textarea>http://www.qinfu168.com/uploads/video/最熟悉的陌生人.mp3</textarea> 最熟悉的陌生人-萧亚轩</li>
+            <li> <textarea>http://www.qinfu168.com/uploads/video/最炫民族风.mp3</textarea> 最炫民族风-凤凰组合</li>
+            <li> <textarea>http://www.qinfu168.com/uploads/video/爱我别走.mp3</textarea> 爱我别走-张震岳</li>
+            <li> <textarea>http://www.qinfu168.com/uploads/video/半糖主义.mp3</textarea> 半糖主义-S.H.E</li>
+            <li> <textarea>http://www.qinfu168.com/uploads/video/城市稻草人.mp3</textarea> 城市稻草人</li>
+            <li> <textarea>http://www.qinfu168.com/uploads/video/大城小爱.mp3</textarea> 大城小爱-王力宏</li>
+            <li> <textarea>http://www.qinfu168.com/uploads/video/开不了口.mp3</textarea> 开不了口-周杰伦</li>
+            <li> <textarea>http://www.qinfu168.com/uploads/video/恋人未满.mp3</textarea> 恋人未满-S.H.E</li>
+            <li> <textarea>http://www.qinfu168.com/uploads/video/他一定很爱你.mp3</textarea> 他一定很爱你-阿杜</li>
+            <li> <textarea>http://www.qinfu168.com/uploads/video/最熟悉的陌生人.mp3</textarea> 最熟悉的陌生人-萧亚轩</li>
+            <li> <textarea>http://www.qinfu168.com/uploads/video/最炫民族风.mp3</textarea> 最炫民族风-凤凰组合</li>        
+            <li><textarea>http://qzone.haoduoge.com/music/12a79JPNX70b9d7d074344c968df3c03d0ef4.mp3 </textarea>陈绮贞-旅行的意义</li>
+          </ul>
+          <div id="ListScrollBar" style="top:0;left:479px;"></div>
+        </div>
+      </div>
+      <script type="text/javascript" src="mplayer/js/MusicPlay.js"></script> 
+      <script type="text/javascript">
+    window.onload = function(){
+      MusicPlay.create('player','mplayer/MusicPlay.swf');
+    }
+      </script>
+      <!-- 代码结束 -->
+</div>
+<div class="qust_show" style="display:none;"> <a href="javascript:void(0);"> <span class="icon server"></span><br/>
+  <span>音</span><br/>
+  <span>乐</span><br/>
+  <span>天</span><br/>
+  <span>地</span><br/>
+  </a> </div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="main/js/contact.js"></script>
+<div style="text-align:center;clear:both">
+</div>
+<!-- 代码 结束 -->
+  <div id="header">
+    <b><font color=red>留言人气: </font></b> <script language="JavaScript" src="http://www.3v.cm/count.asp?id=yoyou"></script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253952889'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1253952889%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
+
+    <div>
+    <pre>
+      <b>这一站, 红花岗</b> <font color="red"> 欢迎, 你是第208位访客！</font> <hr/>
+    </pre>
+    <div style="float:left">
+      |
+      <a target="_blank" href="">文档</a>
+      |
+      <a target="_blank" href="pic/index.html">图片</a>
+      |
+      <a target="_blank" href="">音乐</a>
+      |
+      <a target="_blank" href="">视频</a>
+      |
+      <a target="_blank" href="">游戏</a>
+      |
+      <a target="_blank" href="share.html">共享</a>
+      |
+    </div>
+    <div style="clear:both"></div>
+    </div>
+  </div>
+  <div id="content">
+
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'vmsys'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+       dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+       })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </div>
+  <div id="footer">
+  </div>
+
+<pre>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </pre>
+<div style="text-align:center">
+<p>更多免费客服系统皮肤：<a href="http://www.liuyanbao.net/open/" target="_blank">在线留言系统开源下载</a>　代码整理：<a href="http://www.liuyanbao.net" target="_blank">留言宝</a>　</p>
+<p>＊尊重他人劳动成果，转载请自觉注明出处！注：此代码仅供学习交流，请勿用于商业用途。</p>
+<p><a href="http://www.liuyanbao.net/open/youce.zip"><img border="0" src="http://www.liuyanbao.net/template/images/down.gif" /></a></p>
+</div>
+
+</body>
+</html>
+
