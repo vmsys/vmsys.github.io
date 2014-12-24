@@ -1,5 +1,5 @@
 $(function () {
-	var contachTop = 100; // 右侧联系我们默认高度
+	var contachTop = 300; // 右侧联系我们默认高度
 	function Qust_contachScroll (){
 		var st = 0;
 		if (document.documentElement && document.documentElement.scrollTop) {

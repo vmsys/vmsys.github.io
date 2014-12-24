@@ -20,7 +20,7 @@ a:hover{color:#0b638e; text-decoration:none}/*ff7200*/
 .qust_contach ul li span.icon{_margin-left:-45px;}
 
 .pst_re{ position:relative}
-.qust_contach{ background:#555; border:#fff 1px solid; width:525px; height:400px; padding:1px 5px 10px; font-size:12px; line-height:18px; position:absolute; right:5px; top:300px; z-index:9999;
+.qust_contach{ background:#555; border:#fff 1px solid; width:525px; height:400px; padding:1px 5px 10px; font-size:12px; line-height:18px; position:absolute; right:5px; top:15px; z-index:9999;
 -webkit-box-shadow: 0 0px 7px rgba(0,0,0,0.3);
    -moz-box-shadow: 0 0px 7px rgba(0,0,0,0.3);
 	    box-shadow: 0 0px 7px rgba(0,0,0,0.3);}
