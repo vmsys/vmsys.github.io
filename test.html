@@ -4,22 +4,37 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Enjoy you self</title>
 <style type="text/css">
-.scrolldiv{
-  width:100px;
-  height:200px;
-  position:absolute;
-  top:300px;
-}
+body{ height:3000px;} 
+div,ul,li,body{margin:0; padding:0;} 
+/*position:absolute;用于元素的定位*/ 
+#roll{width:50px; height:100px; background:#99CC00; position:absolute;} 
 </style>
 <link href="main/css/main.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="main/js/scrolldiv.js"></script>
 <script type="text/javascript" src="main/js/jquery-2.1.1.min.js"></script>
+<script>
+var roll=document.getElementById('roll'), 
+initX=0, 
+initY, 
+compY, 
+sp=15, 
+//可调整时间间隔，步进值不宜过大，不然IE下有点闪屏； 
+timeGap=5, 
+doc=document.documentElement, 
+docBody=document.body; 
+compY=initY=200; 
+roll.style.right=initX+"px"; 
+;(function(){ 
+var curScrollTop=(doc.scrollTop||docBody.scrollTop||0)-(doc.clientTop||docBody.clientTop||0); 
+//每次comP的值都不一样；直到roll.style.top===doc.scrollTop+initY； 
+compY+=(curScrollTop+initY-compY)/sp; 
+roll.style.top=Math.ceil(compY)+"px"; 
+setTimeout(arguments.callee,timeGap); 
+})(); 
+</script>
 </head>
 <body>
-  <!--其它浮动模块-->
-  <div class="scrolldiv" style="" >
-    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=940415671&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:940415671:53" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
-  </div>
+<div id="roll">123</div> 
   <pre>
 
 
