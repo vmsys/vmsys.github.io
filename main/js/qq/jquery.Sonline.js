@@ -67,7 +67,7 @@ Blog：www.haw86.com
 		if(opts.Position=="left"){$("#SonlineBox > .openTrigger").css({left:0});}
 		else if(opts.Position=="right"){$("#SonlineBox > .openTrigger").css({right:0});}
 
-		$("body").append("123");
+		$("body").append("<div>123</div>");
 	}
 	
 	//滑动式效果
