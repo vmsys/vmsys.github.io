@@ -104,7 +104,7 @@ $(function(){
         </ul>
       </div>
 
-        <div style="">
+        <div id="music">
     <!-- 代码开始 -->
       <div id="player"></div>
       <div class="DreambackMusicPlayer">
@@ -166,12 +166,15 @@ $(function(){
      if($("#sideBarContents").css("display")=="none")
      {
         $('#sideBarContents').show();
+
+        document.getElementById("music").style.visibility="visible";//隐藏　
         $('#sideBarImg').hide();
         $('#sideBarImg-a').show();
       }
     else
     {
-      $('#sideBarContents').hide();
+      //$('#sideBarContents').hide();
+      document.getElementById("music").style.visibility="hidden";//隐藏　
       $('#sideBarImg-a').hide();
       $('#sideBarImg').show();
     }
