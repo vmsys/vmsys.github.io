@@ -168,20 +168,16 @@ $(function () {
 /**
 * 滑过显示,滑出隐藏
 */
-var flag = 0;
 $('#sideBarTab').on('click', function () {
-  if(flag=0){
-    flag=1;
     $('#sideBarContents').show();
     $('#sideBarImg').hide();
     $('#sideBarImg-a').show();
-  }
 })
 
-$('#sideBarTab').on('click', function () {
-$('#sideBarContents').hide();
-$('#sideBarImg-a').hide();
-$('#sideBarImg').show();
+$('#sideBarTab').on('dblclick', function () {
+  $('#sideBarContents').hide();
+  $('#sideBarImg-a').hide();
+  $('#sideBarImg').show();
 });
 
 });
