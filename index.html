@@ -168,13 +168,13 @@ $(function () {
 /**
 * 滑过显示,滑出隐藏
 */
-$('#sideBarTab').on('click', function () {
+$('#sideBarTab').on('mouseenter', function () {
     $('#sideBarContents').show();
     $('#sideBarImg').hide();
     $('#sideBarImg-a').show();
 })
 
-$('#sideBarTab').on('dblclick', function () {
+$('#sideBarTab').on('click', function () {
   $('#sideBarContents').hide();
   $('#sideBarImg-a').hide();
   $('#sideBarImg').show();
