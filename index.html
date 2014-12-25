@@ -8,9 +8,10 @@
 
 <link rel="stylesheet" type="text/css" href="temp/mplayer/css/style.css">
 
+<link href="main/css/sidebox.css" type="text/css" rel="stylesheet">
 <script type="text/javascript" src="main/js/jquery-2.1.1.min.js"></script>
 
-<script src="main/js/share/init.js"></script>	
+<script src="main/js/share/init.jx"></script>	
 
 
 
@@ -139,6 +140,47 @@ $(function(){
     </div>
   </div>
   <!--其它浮动模块-->
+
+<div id="box-cl-keleyi-com" class="box-cl-keleyi-com">
+  <a href="#" id="sideBarTab">
+    <img src="http://keleyi.com/keleyi/phtml/jqmenu/3/slide-button.gif" alt="sideBar" id="sideBarImg" />
+    <img src="http://keleyi.com/keleyi/phtml/jqmenu/3/slide-button-active.gif" alt="sideBar" id="sideBarImg-a" style="display:none"/>
+  </a>
+  <div id="sideBarContents" style="display:none;">
+    <div id="sideBarContentsInner">
+      <div class="part-cl">
+        <h3>第一章</h3>
+        <ul>
+        <li><a href="http://keleyi.com/a/bjac/n5kb0y0j.htm">jQ的find()方法</a></li><li><a href="http://keleyi.com/a/bjac/mt97p5y9.htm">jQuery实现侧边导航栏效果</a></li><li><a href="http://keleyi.com/a/bjac/phhq4ecr.htm">jquery显示当前时间详细信息</a></li><li><a href="http://keleyi.com/a/bjac/1juhjegr.htm">jquery替换不存在的图片</a></li><li><a href="http://keleyi.com/a/bjac/c6gu08gm.htm" title="jQuery友善的图片轮播(含首页和尾页)">jQuery友善的图片轮播</a></li><li><a href="http://keleyi.com/a/bjac/opnw2awa.htm">jQ的appendTo方法</a></li><li><a href="http://keleyi.com/a/bjac/0vpch15n.htm">jQ的append方法</a></li>
+        </ul>
+        <h3>第二章</h3>
+        <ul>
+        <li><a href="http://keleyi.com/a/bjac/s3sw6q5t.htm">图片轮播切换汇总</a></li><li><a href="http://keleyi.com/a/bjac/516kx8p1.htm">JS/jQ遮罩层集合</a></li><li><a href="http://keleyi.com/a/bjac/veugsmw9.htm">菜单大全</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="http://keleyi.com/keleyi/pmedia/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+$(function () {
+/**
+* 滑过显示,滑出隐藏
+*/
+$('#sideBarTab').on('mouseenter', function () {
+$('#sideBarContents').show();
+$('#sideBarImg').hide();
+$('#sideBarImg-a').show();
+})
+
+$('#box-cl-keleyi-com').on('mouseleave', function () {
+$('#sideBarContents').hide();
+$('#sideBarImg-a').hide();
+$('#sideBarImg').show();
+});
+
+});
+</script>
   <pre>
 
 

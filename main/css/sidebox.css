@@ -1,0 +1,15 @@
+#box-cl-keleyi-com h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em{margin:0;padding:0;border:0;}
+#box-cl-keleyi-com {font-size:12px;font-family:Arial, Helvetica, sans-serif;}
+#box-cl-keleyi-com a{ text-decoration:none; color:#333;outline: none;}
+#box-cl-keleyi-com a:hover{ color:#316ac5; font-weight:bold;}
+#box-cl-keleyi-com{text-align:left;position: fixed; width: auto;height: auto; top: 100px;right:0px;}
+#box-cl-keleyi-com li{ height:16px;padding:2px;display:block;width:177px; list-style:none}
+#sideBarTab{float:left;height:90px;width:30px; }
+#sideBarTab img{ display:block; width:30px;}
+#sideBarContents{float:left;overflow:auto; overflow-x:hidden; !important;width:200px;height:460px;border:1px solid #e5e5e5; border-right:none; background:#ffffff;} 
+#sideBarContentsInner{width:600px;}
+.part-cl{ width:100%; padding-top:10px;}
+.part-cl h3{ font-size:14px; height:16px; margin:5px 0 0 5px;}
+.part-cl ul{ padding-left:15px;}
+body{margin:0px;}
+
