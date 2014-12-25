@@ -7,7 +7,7 @@
 #sideBarTab{float:left;height:90px;width:30px; }
 #sideBarTab img{ display:block; width:30px;}
 #sideBarContents{float:left;overflow:auto; overflow-x:hidden; !important;width:auto;height:460px;border:1px solid #e5e5e5; border-right:none; background:#ffffff;} 
-#sideBarContentsInner{width:0px;}
+#sideBarContentsInner{width:100px;}
 .part-cl{ width:100%; padding-top:10px;}
 .part-cl h3{ font-size:14px; height:16px; margin:5px 0 0 5px;}
 .part-cl ul{ padding-left:15px;}
