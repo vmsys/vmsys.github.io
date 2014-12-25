@@ -6,7 +6,7 @@
 #box-cl-keleyi-com li{ height:16px;padding:2px;display:block;width:177px; list-style:none}
 #sideBarTab{float:left;height:90px;width:30px; }
 #sideBarTab img{ display:block; width:30px;}
-#sideBarContents{float:left;overflow:auto; overflow-x:hidden; !important;width:800px;height:460px;border:1px solid #e5e5e5; border-right:none; background:#ffffff;} 
+#sideBarContents{float:left;overflow:auto; overflow-x:hidden; !important;width:500px;height:460px;border:1px solid #e5e5e5; border-right:none; background:#ffffff;} 
 #sideBarContentsInner{width:600px;}
 .part-cl{ width:100%; padding-top:10px;}
 .part-cl h3{ font-size:14px; height:16px; margin:5px 0 0 5px;}
