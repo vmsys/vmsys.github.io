@@ -159,6 +159,25 @@ $(function(){
     </div>
   </div>
 </div>
+<script type="text/javascript">
+$(function () {
+/**
+* 滑过显示,滑出隐藏
+*/
+$('#sideBarTab').on('mouseenter', function () {
+    $('#sideBarContents').show();
+    $('#sideBarImg').hide();
+    $('#sideBarImg-a').show();
+})
+
+$('#sideBarTab').on('click', function () {
+  $('#sideBarContents').hide();
+  $('#sideBarImg-a').hide();
+  $('#sideBarImg').show();
+});
+
+});
+</script>
   <pre>
 
 
