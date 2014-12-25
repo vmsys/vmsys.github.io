@@ -163,18 +163,17 @@ $(function(){
 <script type="text/javascript">
 $(function(){
   $("#sideBarTab").click(function(){
-     if($("#sideBarContents").css("display")=="none")
+     if($("#sideBarContents").css("width")=="0px")
      {
         $('#sideBarContents').show();
-
-        document.getElementById("music").style.visibility="visible";//隐藏　
+        document.getElementById("sideBarContents").style.width="500px";//隐藏　
         $('#sideBarImg').hide();
         $('#sideBarImg-a').show();
       }
     else
     {
       //$('#sideBarContents').hide();
-      document.getElementById("music").style.width="10px";//隐藏　
+      document.getElementById("sideBarContents").style.width="0px";//隐藏　
       $('#sideBarImg-a').hide();
       $('#sideBarImg').show();
     }
