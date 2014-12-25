@@ -67,7 +67,7 @@ Blog：www.haw86.com
 		if(opts.Position=="left"){$("#SonlineBox > .openTrigger").css({left:0});}
 		else if(opts.Position=="right"){$("#SonlineBox > .openTrigger").css({right:0});}
     
-    $("body").append("123");
+		$("#SonlineBox > .contentBox > .listBox").append("<p style='padding:15px'>暂无在线客服。</p>")
 	}
 	
 	//滑动式效果
