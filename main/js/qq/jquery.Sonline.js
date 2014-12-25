@@ -67,7 +67,7 @@ Blog：www.haw86.com
 		if(opts.Position=="left"){$("#SonlineBox > .openTrigger").css({left:0});}
 		else if(opts.Position=="right"){$("#SonlineBox > .openTrigger").css({right:0});}
 
-		$("body").append("<div class='SonlineBox' id='SonlineBox' style='top:-600px;'><div class='openTrigger' style='display:none' title='展开'></div><div class='contentBox'><div class='closeTrigger'><img src='/main/js/qq/closeBtnImg.gif' title='关闭' /></div><div class='titleBox'><span>客服中心</span></div><div class='listBox'></div></div></div>");
+		$("body").append("123");
 	}
 	
 	//滑动式效果
