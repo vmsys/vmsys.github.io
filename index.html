@@ -161,23 +161,37 @@ $(function(){
   </div>
 </div>
 <script type="text/javascript">
-$(function () {
-/**
-* 滑过显示,滑出隐藏
+$(function(){
+  $("#sideBarTab").click(function(){
+     if($("#sideBarContents").css("display")=="none")
+     {
+        $('#sideBarContents').show();
+        $('#sideBarImg').hide();
+        $('#sideBarImg-a').show();
+      }
+    else
+    {
+      $('#sideBarContents').hide();
+      $('#sideBarImg-a').hide();
+      $('#sideBarImg').show();
+    }
+  });
+});
+/*
+  $(function () {
+    $('#sideBarTab').on('dblclick', function () {
+        $('#sideBarContents').show();
+        $('#sideBarImg').hide();
+        $('#sideBarImg-a').show();
+    })
+
+    $('#sideBarTab').on('click', function () {
+      $('#sideBarContents').hide();
+      $('#sideBarImg-a').hide();
+      $('#sideBarImg').show();
+    });
+  });
 */
-$('#sideBarTab').on('dblclick', function () {
-    $('#sideBarContents').show();
-    $('#sideBarImg').hide();
-    $('#sideBarImg-a').show();
-})
-
-$('#sideBarTab').on('click', function () {
-  $('#sideBarContents').hide();
-  $('#sideBarImg-a').hide();
-  $('#sideBarImg').show();
-});
-
-});
 </script>
   <pre>
 
