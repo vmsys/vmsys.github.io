@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>~/Untitled.html</title>
+<meta name="Generator" content="Vim/7.4">
+<meta name="plugin-version" content="vim7.4_v1">
+<meta name="syntax" content="none">
+<meta name="settings" content="number_lines,use_css,pre_wrap,no_foldcolumn,expand_tabs,line_ids,prevent_copy=">
+<meta name="colorscheme" content="molokai">
+<style type="text/css">
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #d0d0d0; background-color: #121212; }
+body { font-family: monospace; color: #d0d0d0; background-color: #121212; }
+* { font-size: 1em; }
+.LineNr { color: #bcbcbc; background-color: #1c1c1c; padding-bottom: 1px; }
+-->
+</style>
+
+<script type='text/javascript'>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+</head>
+<body onload='JumpToLine();'>
+<pre id='vimCodeElement'>
+<span id="L1" class="LineNr"> 1 </span>熟练掌握C++面向对象编程，熟悉STL泛型编程
+<span id="L2" class="LineNr"> 2 </span>掌握C语言，熟悉链表、堆、栈等数据结构，掌握几个基本算法
+<span id="L3" class="LineNr"> 3 </span>了解tcp/ip基本原理，掌握网络Socket套接字编程，熟悉Qt、mfc
+<span id="L4" class="LineNr"> 4 </span>熟悉Oracle数据库，掌握SQL基本查询，熟悉索引、触发器、存储过程
+<span id="L5" class="LineNr"> 5 </span>熟悉Linux环境，掌握基本常用命令，掌握SHELL编程
+<span id="L6" class="LineNr"> 6 </span>熟练使用vs、svn、git、soapui、vim等工具
+<span id="L7" class="LineNr"> 7 </span>
+<span id="L8" class="LineNr"> 8 </span>项目经验
+<span id="L9" class="LineNr"> 9 </span>  项目一:
+<span id="L10" class="LineNr">10 </span>  DMS通用数挖掘系统
+<span id="L11" class="LineNr">11 </span>     系统平台：Linux
+<span id="L12" class="LineNr">12 </span>     项目描述：本系统基于DMS电信服务需求为主要研究背景，采用C/S架构，和C++程序设计，系统服务器端采用Socket通信，和Unix多线程程序设计，完成并实现了以Unix作为后台服务器的电信服务管理系统。
+<span id="L13" class="LineNr">13 </span>  项目二:
+<span id="L14" class="LineNr">14 </span>  局域网聊天
+<span id="L15" class="LineNr">15 </span>  系统平台：Windows
+<span id="L16" class="LineNr">16 </span>    项目描述：采用MFC开发的聊天程序，服务器端采用多线程技术，每线程服务一个客户端，客户端采用双进程，一个进程负责网络I/O,一个进程负责用户交互。
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->
