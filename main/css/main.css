@@ -14,7 +14,7 @@ a:hover{}
 #menu ul li a:link,#menu ul li a:visited {font-weight:bold;color:#666}
 #menu ul li a:hover{}
 .menuDiv {width:1px;height:28px;background:#999}
-#banner {background:url(../image/banner.png) 0 30px no-repeat;width:800px;margin:auto;height:200px;border-bottom:55px solid #EFEFEF;clear:both}
+#banner {background:url(../image/banner.png) 0 30px no-repeat;width:800px;margin:auto;height:200px;border-bottom:555px solid #EFEFEF;clear:both}
 
 /*Ò³ÃæÖ÷Ìå*/
 #pagebody {width:800px;margin:0 auto;height:400px;background:#CCFF00}
