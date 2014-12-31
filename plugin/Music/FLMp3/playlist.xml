@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+urlskin:皮肤背景图片
+colorcircle：播放控制区背景色
+ipod_title：播放器名称
+title_color：播放器名称字体色
+ombra：音乐随机播放关闭为：no
+buttoncolor：播放控制按钮颜色
+autoStart：启动时自动播放，关闭为：no
+download：音乐下载开关，关闭为：no
+ipod_volume：播放器初始音量，值为：1~100
+-->
+<player urlskin="skin/nero.jpg" colorcircle="343921" ipod_title="伊缘网络" title_color="343921" ombra="yes" buttoncolor="FFFFFF" autoStart="no" download="yes" ipod_volume="300">
+<song path="http://www.qinfu168.com/uploads/video/爱我别走.mp3" title="爱我别走-张震岳" imgsong="cd_cover/img1.jpg"/>
+<song path="http://ting.baidu.com/data/music/file?link=http://zhangmenshiting.baidu.com/data2/music/1658207/15803401346727661.mp3?xcode=44001cdc1d2852c31d07286be822d843" title="road trip-darin" imgsong="cd_cover/img1.jpg"/>
+<song path="http://www.qinfu168.com/uploads/video/城市稻草人.mp3" title="城市稻草人" imgsong="cd_cover/img1.jpg"/>
+<song path="http://www.qinfu168.com/uploads/video/大城小爱.mp3" title="大城小爱-王力宏" imgsong="cd_cover/img1.jpg"/>
+<song path="http://www.qinfu168.com/uploads/video/开不了口.mp3" title="开不了口-周杰伦" imgsong="cd_cover/img1.jpg"/>
+<song path="http://www.qinfu168.com/uploads/video/恋人未满.mp3" title="恋人未满-S.H.E" imgsong="cd_cover/img1.jpg"/>
+<song path="http://www.qinfu168.com/uploads/video/他一定很爱你.mp3" title="他一定很爱你-阿杜" imgsong="cd_cover/img1.jpg"/>
+<song path="http://www.qinfu168.com/uploads/video/最熟悉的陌生人.mp3" title="最熟悉的陌生人-萧亚轩" imgsong="cd_cover/img1.jpg"/>
+<song path="http://www.qinfu168.com/uploads/video/最炫民族风.mp3" title="最炫民族风-凤凰组合" imgsong="cd_cover/img1.jpg"/>
+<song path="http://www.qinfu168.com/uploads/video/爱我别走.mp3" title="爱我别走-张震岳" imgsong="cd_cover/img1.jpg"/>
+<song path="http://www.qinfu168.com/uploads/video/半糖主义.mp3" title="半糖主义-S.H.E" imgsong="cd_cover/img1.jpg"/>
+<song path="http://www.qinfu168.com/uploads/video/城市稻草人.mp3" title="城市稻草人" imgsong="cd_cover/img1.jpg"/>
+<song path="http://www.qinfu168.com/uploads/video/大城小爱.mp3" title="大城小爱-王力宏" imgsong="cd_cover/img1.jpg"/>
+<song path="http://www.qinfu168.com/uploads/video/开不了口.mp3" title="开不了口-周杰伦" imgsong="cd_cover/img1.jpg"/>
+<song path="http://www.qinfu168.com/uploads/video/恋人未满.mp3" title="恋人未满-S.H.E" imgsong="cd_cover/img1.jpg"/>
+<song path="http://www.qinfu168.com/uploads/video/他一定很爱你.mp3" title="他一定很爱你-阿杜" imgsong="cd_cover/img1.jpg"/>
+<song path="http://www.qinfu168.com/uploads/video/最熟悉的陌生人.mp3" title="最熟悉的陌生人-萧亚轩" imgsong="cd_cover/img1.jpg"/>
+<song path="http://www.qinfu168.com/uploads/video/最炫民族风.mp3" title="最炫民族风-凤凰组合" imgsong="cd_cover/img1.jpg"/>        
+<song path="http://qzone.haoduoge.com/music/12a79JPNX70b9d7d074344c968df3c03d0ef4.mp3 </textarea>陈绮贞-旅行的意义" imgsong="cd_cover/img1.jpg"/>
+</player>
