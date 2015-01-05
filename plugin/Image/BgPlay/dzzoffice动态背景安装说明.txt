@@ -1,0 +1,8 @@
+dzzoffice动态背景安装说明（http://www.dzzoffice.com）
+
+
+将lunbo目录建议上传至 dzz/thame/themes/ 目录下，也可以是其他任何http能够访问到的地址。
+
+管理员账号进入主题管理应用，选择动态壁纸。
+
+壁纸地址处，填写你刚上传的访问地址。
