@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="vmsys">
+<meta name="description" content="QQ940415671">
+<title>Enjoy you self</title>
+
+<link href="main/css/sidebox.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <!--其它浮动模块-->
+<div id="box-cl-keleyi-com" class="box-cl-keleyi-com" style="">
+  <a href="#" id="sideBarTab">
+    <img src="http://vmsys.github.io/main/image/slide_open.png" alt="sideBar" id="sideBarImg" />
+    <img src="http://vmsys.github.io/main/image/slide_close.png" alt="sideBar" id="sideBarImg-a" style="display:none"/>
+  </a>
+  <div id="sideBarContents" style="">
+    <div id="sideBarContentsInner">
+      <div class="part-cl" style="display:none">
+        <h3>第一章</h3>
+        <ul>
+        <li><a href="http://keleyi.com/a/bjac/s3sw6q5t.htm">图片轮播切换汇总</a></li><li><a href="http://keleyi.com/a/bjac/516kx8p1.htm">JS/jQ遮罩层集合</a></li><li><a href="http://keleyi.com/a/bjac/veugsmw9.htm">菜单大全</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){
+  $("#sideBarTab").click(function(){
+     if($("#sideBarContents").css("width")=="0px")
+     {
+        $('#sideBarContents').show();
+        document.getElementById("sideBarContents").style.width="500px";//隐藏　
+        $('#sideBarImg').hide();
+        $('#sideBarImg-a').show();
+      }
+    else
+    {
+      //$('#sideBarContents').hide();
+      document.getElementById("sideBarContents").style.width="0px";//隐藏　
+      $('#sideBarImg-a').hide();
+      $('#sideBarImg').show();
+    }
+  });
+});
+/*
+  $(function () {
+    $('#sideBarTab').on('dblclick', function () {
+        $('#sideBarContents').show();
+        $('#sideBarImg').hide();
+        $('#sideBarImg-a').show();
+    })
+
+    $('#sideBarTab').on('click', function () {
+      $('#sideBarContents').hide();
+      $('#sideBarImg-a').hide();
+      $('#sideBarImg').show();
+    });
+  });
+*/
+</script>
+</body>
+</html>
