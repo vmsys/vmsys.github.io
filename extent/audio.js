@@ -14,7 +14,7 @@ else x=snd10
 var audio = document.createElement("audio");
 if (audio != null && audio.canPlayType && audio.canPlayType("audio/mp3"))
 {
-  audio.src = "audio/aryx.ogg";
+  audio.src = "http://vmsys.github.io/extend/audio/aryx.ogg";
   audio.loop = "loop";
   audio.controls = "controls";
   audio.play();
