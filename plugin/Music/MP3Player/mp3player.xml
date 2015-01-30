@@ -1,0 +1,16 @@
+﻿<player>
+  <playlist>
+    <track>
+      <file>X先生.mp3</file>
+      <title>李贞贤-韩语独一无二</title>
+      <artist>李贞贤</artist>
+      <album>李贞贤</album>
+    </track>
+  <track>
+      <file>plugin/Music/MP3Player/光辉岁月.mp3</file>
+      <title>光辉岁月</title>
+      <artist>Beyond</artist>
+      <album>光辉岁月</album>
+    </track>
+  </playlist>
+</player>

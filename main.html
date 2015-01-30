@@ -14,7 +14,6 @@
 
 <script type="text/javascript" src="main/js/jquery-2.1.1.min.js"></script>
 
-<script src="main/js/share/init.js"></script>	
 
 
 
@@ -35,28 +34,16 @@ $(function(){
 })	
 </script>
 
-
-<script>
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "//hm.baidu.com/hm.js?93fddeb8162544cf78de773d3220316d";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-  })();
-</script>
-
 </head>
 <body>
   <div>
     <b><font color=red>留言人气: </font></b> <script language="JavaScript" src="http://www.3v.cm/count.asp?id=yoyou"></script>
-
     <script type="text/javascript">
       var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
       document.write(unescape("%3Cspan id='cnzz_stat_icon_1253952889'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1253952889%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
     </script>
-
   </div>
+
   <div id="container">
     <div id="header">
       <div id="menu">
@@ -114,22 +101,33 @@ $(function(){
   </a>
   <div id="sideBarContents" style="display:none;">
     <div id="sideBarContentsInner">
-      <div class="part-cl" style="display:none">
-        <h3>第一章</h3>
-        <ul>
-        <li><a href="http://keleyi.com/a/bjac/s3sw6q5t.htm">图片轮播切换汇总</a></li><li><a href="http://keleyi.com/a/bjac/516kx8p1.htm">JS/jQ遮罩层集合</a></li><li><a href="http://keleyi.com/a/bjac/veugsmw9.htm">菜单大全</a></li>
-        </ul>
+      <div>
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="156" height="274">
+          <param name="movie" value="plugin/Music/MP3Player/mp3player.swf" />
+          <param name="quality" value="high" />
+          <param name="allowScriptAccess" value="always" />
+          <param name="wmode" value="transparent">
+             <embed src="plugin/Music/MP3Player/mp3player.swf"
+              quality="high"
+              type="application/x-shockwave-flash"
+              WMODE="transparent"
+              width="156"
+              height="274"
+              pluginspage="http://www.macromedia.com/go/getflashplayer"
+              allowScriptAccess="always" />
+        </object>
       </div>
     </div>
   </div>
 </div>
 <script type="text/javascript">
 $(function(){
+        $('#sideBarContents').show();
   $("#sideBarTab").click(function(){
      if($("#sideBarContents").css("width")=="0px")
      {
         $('#sideBarContents').show();
-        document.getElementById("sideBarContents").style.width="500px";//隐藏　
+        document.getElementById("sideBarContents").style.width="auto";//隐藏　
         $('#sideBarImg').hide();
         $('#sideBarImg-a').show();
       }
