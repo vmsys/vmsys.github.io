@@ -7,6 +7,12 @@
             <album>超越Beyond精选</album>
         </track>
         <track>
+            <file>plugin/Music/MP3Player/music/灰色轨迹.mp3</file>
+            <title>灰色轨迹</title>
+            <artist>Beyond</artist>
+            <album>各有各精彩</album>
+        </track>
+        <track>
             <file>plugin/Music/MP3Player/music/长城.mp3</file>
             <title>长城</title>
             <artist>Beyond</artist>
@@ -71,12 +77,6 @@
             <title>谁伴我闯荡</title>
             <artist>Beyond</artist>
             <album>25周年精选</album>
-        </track>
-        <track>
-            <file>plugin/Music/MP3Player/music/灰色轨迹.mp3</file>
-            <title>灰色轨迹</title>
-            <artist>Beyond</artist>
-            <album>各有各精彩</album>
         </track>
     </playlist>
 </player>
