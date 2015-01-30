@@ -1,73 +1,73 @@
 ﻿<player>
     <playlist>
         <track>
-            <file>plugin/Music/MP3Player/长城.mp3</file>
+            <file>plugin/Music/MP3Player/music/长城.mp3</file>
             <title>长城</title>
             <artist>Beyond</artist>
             <album>继续革命</album>
         </track>
         <track>
-            <file>plugin/Music/MP3Player/农民.mp3</file>
+            <file>plugin/Music/MP3Player/music/农民.mp3</file>
             <title>农民</title>
             <artist>Beyond</artist>
             <album>继续革命</album>
         </track>
         <track>
-            <file>plugin/Music/MP3Player/逝去的日子.mp3</file>
+            <file>plugin/Music/MP3Player/music/逝去的日子.mp3</file>
             <title>逝去的日子</title>
             <artist>Beyond</artist>
             <album>20周年精选</album>
         </track>
         <track>
-            <file>plugin/Music/MP3Player/再见理想.mp3</file>
+            <file>plugin/Music/MP3Player/music/再见理想.mp3</file>
             <title>再见理想</title>
             <artist>Beyond</artist>
             <album>Best Of Millennium</album>
         </track>
         <track>
-            <file>plugin/Music/MP3Player/海阔天空.mp3</file>
+            <file>plugin/Music/MP3Player/music/海阔天空.mp3</file>
             <title>海阔天空</title>
             <artist>Beyond</artist>
             <album>海阔天空</album>
         </track>
         <track>
-            <file>plugin/Music/MP3Player/喜欢你.mp3</file>
+            <file>plugin/Music/MP3Player/music/喜欢你.mp3</file>
             <title>喜欢你</title>
             <artist>Beyond</artist>
             <album>25周年精选</album>
         </track>
         <track>
-            <file>plugin/Music/MP3Player/真的爱你.mp3</file>
+            <file>plugin/Music/MP3Player/music/真的爱你.mp3</file>
             <title>真的爱你</title>
             <artist>Beyond</artist>
             <album>超越Beyond精选</album>
         </track>
         <track>
-            <file>plugin/Music/MP3Player/不再犹豫.mp3</file>
+            <file>plugin/Music/MP3Player/music/不再犹豫.mp3</file>
             <title>不再犹豫</title>
             <artist>Beyond</artist>
             <album>25周年精选</album>
         </track>
         <track>
-            <file>plugin/Music/MP3Player/大地.mp3</file>
+            <file>plugin/Music/MP3Player/music/大地.mp3</file>
             <title>大地</title>
             <artist>Beyond</artist>
             <album>25周年精选</album>
         </track>
         <track>
-            <file>plugin/Music/MP3Player/冷雨夜.mp3</file>
+            <file>plugin/Music/MP3Player/music/冷雨夜.mp3</file>
             <title>冷雨夜</title>
             <artist>Beyond</artist>
             <album>超越Beyond精选</album>
         </track>
         <track>
-            <file>plugin/Music/MP3Player/谁伴我闯荡.mp3</file>
+            <file>plugin/Music/MP3Player/music/谁伴我闯荡.mp3</file>
             <title>谁伴我闯荡</title>
             <artist>Beyond</artist>
             <album>25周年精选</album>
         </track>
         <track>
-            <file>plugin/Music/MP3Player/灰色轨迹.mp3</file>
+            <file>plugin/Music/MP3Player/music/灰色轨迹.mp3</file>
             <title>灰色轨迹</title>
             <artist>Beyond</artist>
             <album>各有各精彩</album>
