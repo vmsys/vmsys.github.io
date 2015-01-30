@@ -1,5 +1,5 @@
 /*基本信息*/
-body {font:12px Tahoma;margin:0px;text-align:center;background:#4F7FD2;}
+body {font:12px Tahoma;margin:0px;text-align:center;background:#4F7FD2 url(../image/main.png);}
 a:link,a:visited {font-size:12px;text-decoration: none;}
 a:hover{}
 
