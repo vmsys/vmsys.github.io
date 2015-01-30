@@ -1,6 +1,12 @@
 ﻿<player>
     <playlist>
         <track>
+            <file>plugin/Music/MP3Player/music/真的爱你.mp3</file>
+            <title>真的爱你</title>
+            <artist>Beyond</artist>
+            <album>超越Beyond精选</album>
+        </track>
+        <track>
             <file>plugin/Music/MP3Player/music/长城.mp3</file>
             <title>长城</title>
             <artist>Beyond</artist>
@@ -17,12 +23,6 @@
             <title>海阔天空</title>
             <artist>Beyond</artist>
             <album>海阔天空</album>
-        </track>
-        <track>
-            <file>plugin/Music/MP3Player/music/真的爱你.mp3</file>
-            <title>真的爱你</title>
-            <artist>Beyond</artist>
-            <album>超越Beyond精选</album>
         </track>
         <track>
             <file>plugin/Music/MP3Player/music/农民.mp3</file>
