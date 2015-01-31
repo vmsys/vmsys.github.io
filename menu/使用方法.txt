@@ -1,0 +1,21 @@
+黑色质感跟随鼠标的css3特效导航栏 我爱模版推荐
+
+使用方法：
+1、在head之间引入下面代码
+<link href="css/menu.css" rel="stylesheet" type="text/css" />
+2、把以下代码拷贝到你想引用的地方
+<div class="container">
+  <ul id="nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+    <li><a href="#">Menu 4</a></li>
+    <li><a href="#">Menu 5</a></li>
+    <li><a href="#">Menu 6</a></li>
+    <li><a href="#">Back</a></li>
+    <div id="lavalamp"></div>
+  </ul>
+</div>
+
+更多特效欢迎访问：http://www.5imoban.net/texiao/
