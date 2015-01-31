@@ -13,6 +13,9 @@ border-radius: 20px;
 padding: 0px 0px; 
 width:800px;
 }</style> 
+<!--菜单-->
+<link href="css/menu.css" rel="stylesheet" type="text/css" />
+
 <link href="main/css/main.css" rel="stylesheet" type="text/css" media="all" />
 
 <link rel="stylesheet" type="text/css" href="temp/mplayer/css/style.css">
@@ -20,6 +23,64 @@ width:800px;
 <link href="main/css/sidebox.css" type="text/css" rel="stylesheet">
 
 <script type="text/javascript" src="main/js/jquery-2.1.1.min.js"></script>
+
+
+
+
+
+
+
+
+<style type="text/css">
+ 
+div.bottombar{ /* bar that runs across the bottom of the menu */
+height: 10px;
+background: #1a1109;
+}
+ 
+ul.semiopaquemenu{ /* main menu UL */
+font: bold 14px Georgia ;
+width: 100%;
+background: #b1e958;
+padding: 11px 0 8px 0; /* padding of the 4 sides of the menu */
+margin: 0;
+text-align: left; /* set value to "left", "center", or "right" to align menu accordingly */
+}
+ 
+ul.semiopaquemenu li{
+display: inline;
+}
+ 
+ul.semiopaquemenu li a{
+color:black;
+padding: 6px 8px 6px 8px; /* padding of the 4 sides of each menu link */
+margin-right: 15px; /* spacing between each menu link */
+text-decoration: none;
+}
+ 
+ul.semiopaquemenu li a:hover, ul.semiopaquemenu li a.selected{
+color: black;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjgyIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4xNiIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); /* IE9+ SVG equivalent  of linear gradients */
+background: -moz-linear-gradient(top,  rgba(255,255,255,0.82) 0%, rgba(255,255,255,0.16) 100%); /* fade from white (0.82 opacty) to 0.16 opacity */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.82)), color-stop(100%,rgba(255,255,255,0.16)));
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.82) 0%,rgba(255,255,255,0.16) 100%);
+background: -o-linear-gradient(top,  rgba(255,255,255,0.82) 0%,rgba(255,255,255,0.16) 100%);
+background: -ms-linear-gradient(top,  rgba(255,255,255,0.82) 0%,rgba(255,255,255,0.16) 100%);
+background: linear-gradient(top,  rgba(255,255,255,0.82) 0%,rgba(255,255,255,0.16) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1ffffff', endColorstr='#29ffffff',GradientType=0 );
+-moz-box-shadow: 0 0 5px #595959; /* CSS3 box shadows */
+-webkit-box-shadow: 0 0 5px #595959;
+box-shadow: 0 0 5px #595959;
+padding-top: 12px; /* large padding to get menu item to protrude upwards */
+padding-bottom: 20px; /* large padding to get menu item to protrude downwards */
+}
+ 
+</style>
+
+
+
+
+
 
 
 
@@ -43,6 +104,32 @@ $(function(){
 
 </head>
 <body>
+
+<div class="container">
+02
+  <ul id="nav">
+03
+    <li><a href="#">Home</a></li>
+04
+    <li><a href="#">Menu 1</a></li>
+05
+    <li><a href="#">Menu 2</a></li>
+06
+    <li><a href="#">Menu 3</a></li>
+07
+    <li><a href="#">Menu 4</a></li>
+08
+    <li><a href="#">Menu 5</a></li>
+09
+    <li><a href="#">Menu 6</a></li>
+10
+    <li><a href="#">Back</a></li>
+11
+    <div id="lavalamp"></div>
+12
+  </ul>
+13
+</div>
 <center>
 <div id="round"> 
   <div>
@@ -55,7 +142,7 @@ $(function(){
 
   <div id="container">
     <div id="header">
-      <div id="menu">
+      <div id="semiopaquemenu">
         <ul>
           <li><a target="_blank" href="main/tutor">教程</a></li>
           <li class="menuDiv"></li>
