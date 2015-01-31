@@ -1,0 +1,17 @@
+Flash+XML图片幻灯插件，六屏带加载条 我爱模板推荐
+
+我爱模板网推荐一款Flash+XML的图片幻灯插件，一共六屏，每张图片自动播放，在右下角有圆形加载和进度条，进度条滚动到顶，播放下一张，效果不错，适合企业的产品展示轮播。不存在兼容性。
+
+使用方法：
+1、首先在head引入flash.js文件。
+
+2、在需要访如此轮播的地方，加上下面的代码：
+<script language="javascript" type="text/javascript">
+writeflashhtml("_swf=swf/5imoban.net.swf", "_width=650", "_height=370" ,"_wmode=transparent");
+</script>
+
+其中，_swf是flash的地址，_width是flash的宽度，_height是flash的高度，_wmode是flash的透明度设置，请保留“transparent”，即透明。否则，如果您的网站有漂浮广告、漂浮客服等等，会被本幻灯覆盖。
+
+3、进入data.xml文件，修改图片路径和图片链接地址。
+
+更多网站模板欢迎访问：http://www.5imoban.net/cssmoban/
