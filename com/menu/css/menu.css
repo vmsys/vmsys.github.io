@@ -16,9 +16,9 @@ header a,footer a{
 footer p{
     line-height:2;
 }
-.container {
+.menu {
     margin: 30px auto;
-    width: 957px;
+    width: 557px;
 }
 /* menu */
 #nav,#nav ul {
