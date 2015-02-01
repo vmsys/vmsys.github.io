@@ -37,7 +37,7 @@ footer p{
     height: 58px;
     padding: 0 0 0 9px;
     position: relative;
-    width: 787px;
+    width: 450px;
 }
 #nav ul {
     background-color: #222;
@@ -106,7 +106,7 @@ footer p{
 #lavalamp {
     background: url('lavalamp.png') no-repeat scroll 0 0 transparent;
     height: 16px;
-    left: 13px;
+    left: 10px;
     position: absolute;
     top: 0px;
     width: 64px;
@@ -125,25 +125,25 @@ footer p{
     transition-duration: 3000s;
 }
 #nav li:nth-child(1):hover ~ #lavalamp {
-    left: 13px;
+    left: 10px;
 }
 #nav li:nth-child(2):hover ~ #lavalamp {
-    left: 90px;
+    left: 30px;
 }
 #nav li:nth-child(3):hover ~ #lavalamp {
-    left: 170px;
+    left: 140px;
 }
 #nav li:nth-child(4):hover ~ #lavalamp {
-    left: 250px;
+    left: 205px;
 }
 #nav li:nth-child(5):hover ~ #lavalamp {
-    left: 330px;
+    left: 270px;
 }
 #nav li:nth-child(6):hover ~ #lavalamp {
-    left: 410px;
+    left: 335px;
 }
 #nav li:nth-child(7):hover ~ #lavalamp {
-    left: 490px;
+    left: 400px;
 }
 #nav li:nth-child(8):hover ~ #lavalamp {
     left: 565px;
