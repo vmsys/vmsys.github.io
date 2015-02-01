@@ -128,7 +128,7 @@ footer p{
     left: 10px;
 }
 #nav li:nth-child(2):hover ~ #lavalamp {
-    left: 30px;
+    left: 70px;
 }
 #nav li:nth-child(3):hover ~ #lavalamp {
     left: 140px;

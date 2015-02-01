@@ -16,6 +16,21 @@ div,h2,p{margin:0;padding:0;}
 
 <title>Welcome to C++</title>
 
+<script>
+window.onload = function() { 
+    setTimeout(function() { 
+            // XHR to request a JS and a CSS 
+            var xhr = new XMLHttpRequest(); 
+            xhr.open('GET', 'http://domain.tld/preload.js'); 
+            xhr.send(''); 
+            xhr = new XMLHttpRequest(); 
+            xhr.open('GET', 'http://domain.tld/preload.css'); 
+            xhr.send(''); 
+            // preload image 
+            new Image().src = "http://vmsys.github.io/main/image/main.png"; 
+            }, 1000); 
+}; 
+</script>
 
 <script type="text/javascript">
 //拖拽浮动层
