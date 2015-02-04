@@ -21,18 +21,3 @@ C = Math.cos; S = Math.sin; U = 0; w = window; j = document; d = j.getElementByI
 }
 j.onkeydown = function (e) { a = b = 0; R += 0.05 }
 d.onmousemove({ pageX: 300, pageY: 290 })
-    }</script>
-<style>body{margin:0;overflow:hidden}div{padding:1px 5px;background:#333;position:absolute;z-index:2;color:#555;font-family:arial}a{color:#ccf}a:hover{color:red}</style>
-
-</head>
-
-<body>
-<style>
-.notex {position:absolute;left:273px;top:102px;width:804px;height:180px;background-color:rgba(0,0,0,0.35);filter:alpha(opacity=28);}
-.notex p{padding:45px 15px 0;font:16px "Microsoft Yahei";color:#fff;text-align:center;}
-</style>
-<script>
-function mySwitch(){
-    document.getElementById('note').style.display = document.getElementById('note').style.display=='none'?'block':'none';
-}
-
