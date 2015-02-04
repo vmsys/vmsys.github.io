@@ -11,13 +11,13 @@
     function DoSomething()
     {
         var state = document.readyState;
-        if(state == "interactive") alert(state);
+        if(state == "interactive")
         {
             var refurl=document.referrer;
             alert(refurl);
             if (refurl=="") location.href="update.html";
         }
-        else if(state == "complete") lert("页面加载完成");
+        else if(state == "complete") alert("页面加载完成");
 
     }
 </script>
