@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>网页短时间维护倒计时js代码 - ewceo.com</title>
+<title>主页正在维护</title>
 <style>
 html{*overflow:auto;_overflow-x:hidden;-webkit-text-size-adjust:none;height:100%;
 background:#80CBF3}
@@ -35,25 +35,5 @@ h3{ font-size:26px; color:#2F2D2E;}
         </div>
     </div>
 </div>
-<script>
-var m = 10;//传个分钟数到这里
-var s = 60;
-function showtime(){
-	document.getElementById('m').innerHTML = m;
-	document.getElementById('s').innerHTML = s;
-	s = s-1;
-	if(s==0){
-		m = m -1;
-		s = 60
-	}
-	if(m==0){
-		window.location='http://www.ewceo.com';//倒计时结束跳转到 www.ewceo.com
-	}
-}
-clearInterval(settime); 
-var settime = setInterval(function(){
-	showtime();
-},1000);
-</script>
 </body>
 </html>
