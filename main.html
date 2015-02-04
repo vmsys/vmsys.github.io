@@ -7,17 +7,27 @@
 <title>Enjoy you self</title>
 
 <script type="text/javascript"> 
+if(self!=top){top.location=self.location;} 
+var ref=document.referrer; 
+alert(ref);
+var domains=new Array("admin","welcome"); 
+var refpass=false; 
+alert(ref.indexOf(domains[0]));
+for(i=0;i<=domains.length;i++){if(ref.indexOf(domains[i])>0){refpass=true;break;}} 
+if(ref==""){refpass=false;} 
+if(!refpass){window.location.href='http://www.jb51.net';} 
+
+
     document.onreadystatechange = DoSomething;
     function DoSomething()
     {
         var state = document.readyState;
         if(state == "interactive")
         {
-            var refurl=document.referrer;
-            alert(refurl);
-            if (refurl=="") location.href="update.html";
         }
-        else if(state == "complete") alert("页面加载完成");
+        else if(state == "complete")
+        {
+        }
 
     }
 </script>
