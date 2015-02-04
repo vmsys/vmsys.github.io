@@ -7,14 +7,7 @@
 <title>Enjoy you self</title>
 
 <script type="text/javascript"> 
-    if(self!=top) {top.location=self.location;} 
-    var ref=document.referrer; 
-    var domains=new Array("qq.com/","www.qq.com/","baidu.com/","www.baidu.com/"); 
-    var refpass=false; 
-    for(i=0;i<=domains.length;i++) {if(ref.indexOf(domains[i])>0){refpass=true;break;}} 
-    if(ref=="") {refpass=true} 
-    if(!refpass) {window.location.href='http://www.hao123.com';} 
-    alert(ref);
+    if(document.referrer=="") alert("forbid");
 </script>
 
 
