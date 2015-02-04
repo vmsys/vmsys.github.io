@@ -11,8 +11,7 @@ if(self!=top){top.location=self.location;}
 var ref=document.referrer; 
 var domains=new Array("github","admin","welcome"); 
 var refpass=false; 
-alert(ref.indexOf(domains[0]));
-for(i=0;i<=domains.length;i++){alert(ref.indexOf(domains[i]));if(ref.indexOf(domains[i])>=0){refpass=true;break;}} 
+for(i=0;i<=domains.length;i++){f(ref.indexOf(domains[i])>=0){refpass=true;break;}} 
 if(ref==""){refpass=false;} 
 if(!refpass){window.location.href='update.html';} 
 
@@ -20,12 +19,8 @@ document.onreadystatechange = DoSomething;
 function DoSomething()
 {
     var state = document.readyState;
-    if(state == "interactive")
-    {
-    }
-    else if(state == "complete")
-    {
-    }
+    if(state == "interactive") { }
+    else if(state == "complete") { }
 
 }
 </script>
