@@ -14,7 +14,10 @@
     function DoSomething()
     {
         //if(document.readyState == "complete") alert("页面加载完成");
-        alert(document.readyState);
+        // interactive
+        var state = document.readyState;
+        if(state == "interactive") alert(state);
+        else if(state == "complete") alert(state);
     }
 </script>
 
