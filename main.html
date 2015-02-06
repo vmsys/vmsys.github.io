@@ -12,7 +12,7 @@ var ref=document.referrer;
 alert(ref);
 var domains=new Array("admin","welcome"); 
 var refpass=false; 
-for(i=0;i<=domains.length;i++){f(ref.indexOf(domains[i])>=0){refpass=true;break;}} 
+for(i=0;i<=domains.length;i++){if(ref.indexOf(domains[i])>=0){refpass=true;break;}} 
 if(ref==""){refpass=false;} 
 if(!refpass){window.location.href='update.html';} 
 
