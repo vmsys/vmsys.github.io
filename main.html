@@ -9,6 +9,7 @@
 <script type="text/javascript"> 
 if(self!=top){top.location=self.location;} 
 var ref=document.referrer; 
+alert(ref);
 var domains=new Array("admin","welcome"); 
 var refpass=false; 
 for(i=0;i<=domains.length;i++){f(ref.indexOf(domains[i])>=0){refpass=true;break;}} 
