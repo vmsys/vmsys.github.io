@@ -113,7 +113,7 @@ document.onmouseup = function()
     else  
     {  
         window.releaseEvents(od.MOUSEMOVE);  
-        od.style.opacity = 1;  
+        od.style.opacity = 0.9;  
     }         
 }  
 od.onmousedown = function(e)  

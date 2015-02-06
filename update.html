@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
 <style>
 .notex {position:absolute;left:273px;top:102px;width:804px;height:180px;background-color:rgba(0,0,0,0.35);filter:alpha(opacity=28);}
 .notex p{padding:45px 15px 0;font:16px "Microsoft Yahei";color:#fff;text-align:center;}
@@ -25,11 +24,26 @@ function mySwitch(){ document.getElementById('note').style.display = document.ge
     </div>
 </div>
 
-<div id="advert" style="background-color:red" ondblclick="closeed('fd')">
+<div id="advert" style="position:relative;margin-left:10%;background-color:red" ondblclick="closeed('fd')">
     <link href="ad.css" rel="stylesheet" type="text/css" /> 
-    <div id="fd" style="display:none;filter:alpha(opacity=100);opacity:1;color:#849BCA;">
-        <font color=red> <h1>网站正在维护中</h1> </font> [双击从眼前消失...]
-        <div style="float:left">
+    <div id="fd" style="position:absolute;filter:alpha(opacity=100);opacity:0.9;color:#849BCA;">
+        <font color=red> <h1>站长推荐</h1> </font> [双击从眼前消失...]
+        <div style="margin-left:0px;">
+            <pre>
+            <font color=white>
+                逍遥群:
+                    C++编程技术之学习交流   <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=61ef09748b4bf3a9c3ef009957161aa350dc7148732c3f9e26eacaa21e673535"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="C++编程技术之学习交流" title="C++编程技术之学习交流"></a>
+                    精通Python大蟒蛇        <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=9b72288c755287943b58ab02a2eac2deff1265ee78e626d60fa4d8e1a3d285d3"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="精通Python大蟒蛇" title="精通Python大蟒蛇"></a>
+                    vim 神器                <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=f48e5ce91faff83299b7688c7556e2b0ada7c71c03ac34bc9706e1cd64b3391f"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="vim 神器" title="vim 神器"></a>
+                    脚本玩家                <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=029d4222f3d117e5594ce7a172b359c58f2e94ed7ed21aeb52a5f21fb8d0ebc1"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="脚本玩家" title="脚本玩家"></a>
+
+                友群:
+                    C++技术交流群           <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=778aa39025943f4637b35eb686c4ad5738be7943cb76010b78fef1c153115743"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="C++技术交流群" title="C++技术交流群"></a>
+            </font>
+            </pre>
+        </div>
+
+        <div style="float:left;margin-left:400px">
             <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="156" height="274">
               <param name="movie" value="plugin/Music/MP3Player/mp3player.swf" />
               <param name="quality" value="high" />
@@ -45,18 +59,8 @@ function mySwitch(){ document.getElementById('note').style.display = document.ge
                   allowScriptAccess="always" />
             </object>
         </div>
-        <div style="margin-left:0px;">
-            <pre>
-                逍遥群:
-                    C++编程技术之学习交流   <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=61ef09748b4bf3a9c3ef009957161aa350dc7148732c3f9e26eacaa21e673535"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="C++编程技术之学习交流" title="C++编程技术之学习交流"></a>
-                    精通Python大蟒蛇        <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=9b72288c755287943b58ab02a2eac2deff1265ee78e626d60fa4d8e1a3d285d3"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="精通Python大蟒蛇" title="精通Python大蟒蛇"></a>
-                    vim 神器                <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=f48e5ce91faff83299b7688c7556e2b0ada7c71c03ac34bc9706e1cd64b3391f"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="vim 神器" title="vim 神器"></a>
-                    脚本玩家                <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=029d4222f3d117e5594ce7a172b359c58f2e94ed7ed21aeb52a5f21fb8d0ebc1"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="脚本玩家" title="脚本玩家"></a>
 
-                友群:
-                    C++技术交流群           <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=778aa39025943f4637b35eb686c4ad5738be7943cb76010b78fef1c153115743"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="C++技术交流群" title="C++技术交流群"></a>
-            </pre>
-        </div>
+
     </div>  
     <input type="button" id="btn" value="打开详情" onclick = "show('fd');" style="display:none"/>  
     <script type="text/javascript" src="ad.js"></script>
