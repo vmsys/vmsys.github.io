@@ -23,7 +23,7 @@ function openx(o,x)
     var cx = parseInt(o.style.width);  
     if(cx < x)  
     {  
-        o.style.width = (cx + Math.ceil((x-cx)/100)) +"px";  
+        o.style.width = (cx + Math.ceil((x-cx)/5)) +"px";  
     }  
     else  
     {  
@@ -37,7 +37,7 @@ function openy(o,y)
     var cy = parseInt(o.style.height);  
     if(cy < y)  
     {  
-        o.style.height = (cy + Math.ceil((y-cy)/100)) +"px";  
+        o.style.height = (cy + Math.ceil((y-cy)/5)) +"px";  
     }  
     else  
     {  
