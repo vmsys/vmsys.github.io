@@ -15,7 +15,7 @@ function show(id)
     o.style.display = "block";  
     o.style.width = "1px";  
     o.style.height = "1px";   
-    prox = setInterval(function(){openx(o,600)},10);  
+    prox = setInterval(function(){openx(o,890)},10);  
 }     
 /*--打开x--*/  
 function openx(o,x)  
