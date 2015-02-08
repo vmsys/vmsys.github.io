@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>~/.vms/ext/git/www/public/siteapp/Untitled.html</title>
+<meta name="Generator" content="Vim/7.4">
+<meta name="plugin-version" content="vim7.4_v1">
+<meta name="syntax" content="none">
+<meta name="settings" content="number_lines,use_css,no_foldcolumn,expand_tabs,line_ids,prevent_copy=">
+<meta name="colorscheme" content="Tomorrow-Night-Eighties">
+<style type="text/css">
+<!--
+pre { font-family: monospace; color: #bcbcbc; background-color: #1c1c1c; }
+body { font-family: monospace; color: #bcbcbc; background-color: #1c1c1c; }
+* { font-size: 1em; }
+.LineNr { color: #4e4e4e; }
+-->
+</style>
+
+<script type='text/javascript'>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+</head>
+<body onload='JumpToLine();'>
+<pre id='vimCodeElement'>
+<img src="iphone.png"/><span id="L1" class="LineNr">1 </span>Android 1.6及以上版本               当前版本：3.0.5<a href="YaoKe_3_0_7_iPhone_build201502081715.ipa">(点击下载)</a>
+<img src="android.png"/><span id="L2" class="LineNr">2 </span>IOS 5.0及以上版本                   当前版本：3.0.7<a href="YaoKe_3_0_5_Android_build201502081730.apk">(点击下载)</a>
+<img src="winphone.png"/><span id="L3" class="LineNr">3 </span>Windows Phone 7.1(Mango)及以上版本  当前版本：2.5.1<a href="YaoKe_2_5_1_WindowsPhone7_build201502081714.xap">(点击下载)</a>
+<span id="L4" class="LineNr">4 </span>
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->
