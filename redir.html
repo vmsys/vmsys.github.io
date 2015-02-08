@@ -30,7 +30,16 @@ var Request = new Object();
 Request = GetRequest();
 var url; 
 url = Request['url'];
-location.href="siteapp.html";
+
+switch (url)
+{
+case 'guanyu':
+    location.href="www.baidu.com";
+    break;
+default:
+    location.href="siteapp.html";
+}
+
 </Script>
 
 </BODY>  
