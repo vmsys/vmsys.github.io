@@ -13,6 +13,12 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+
+
+<base href="_blank">
+<link rel="stylesheet" type="text/css" href="style_1_common.css?RdU"><link rel="stylesheet" type="text/css" href="data/cache/style_1_home_space.css?RdU"><link rel="stylesheet" id="css_extstyle" type="text/css" href="style.css"><script src="//hm.baidu.com/hm.js?4a112f73f0f51dad3bd97959feab7a18"></script><script charset="utf-8" src="http://ers.baidu.com/app/s.js?siteId=6267510&amp;goTop=1"></script><script src="//hm.baidu.com/hm.js?4a112f73f0f51dad3bd97959feab7a18"></script><script type="text/javascript">var STYLEID = '1', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'RdU', charset = 'gbk', discuz_uid = '9', cookiepre = '6eR1_2132_', cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread', creditnotice = '1|威望|,2|金钱|,3|贡献|,4|元宝|', defaultstyle = './template/default/style/t1', REPORTURL = 'aHR0cDovL3d3dy5iYWlidW1sLmNvbS9ob21lLnBocD9tb2Q9c3BhY2UmZG89aG9tZSZ2aWV3PXdl', SITEURL = 'http://www.baibuml.com/', JSPATH = 'data/cache/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script>
+<script src="data/cache/common.js?RdU" type="text/javascript"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -63,5 +69,360 @@ $ git checkout gh-pages
     </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
+
+
+
+<!--begin@标题闪动-->
+<script type="text/javascript">noticeTitle();</script>
+<!--end@标题闪动-->
+
+<!--begin@顶部滚条-->
+<style type="text/css">
+#Scroll { 
+FONT-SIZE: 12px; 
+BACKGROUND:none; 
+WIDTH: auto; 
+margin:0 auto;
+COLOR: #c2130e; 
+LINE-HEIGHT: 20px; 
+HEIGHT: 20px; 
+TEXT-ALIGN: left;
+display:inline;
+}
+#Scroll a {
+padding:0 10px;
+height:20px; 
+width:auto;
+line-height:20px;
+BACKGROUND: none; 
+COLOR: #000; 
+MARGIN-RIGHT: 5px; 
+TEXT-DECORATION: none;
+}
+#Scroll a:hover{
+color:#A60000;
+text-decoration:underline;
+}
+#Scroll a.s_end {
+PADDING-RIGHT: 0px; 
+MARGIN-LEFT: 8px
+}
+
+.rsf_hdtp_style{
+width:auto;
+height:20px;
+position:absolute;
+top:0;
+padding-top:4px;
+}
+.rsf_notice{
+height:20px;
+float:left;
+display:block;
+padding:0 5px 0 10px;
+line-height:20px;
+text-align:center;
+}
+</style>
+<div class="rsf_hdtp_style" id="rsf_hdtp_pp" style="width: 600px; margin-left: 401px;">
+
+<script>  
+function srcMarquee(){
+this.ID = document.getElementById(arguments[0]);
+if(!this.ID){this.ID = -1;return;}
+this.Direction = this.Width = this.Height = this.DelayTime = this.WaitTime = this.Correct = this.CTL = this.StartID = this.Stop = this.MouseOver = 0;
+this.Step = 1;
+this.Timer = 30;
+this.DirectionArray = {"top":0 , "bottom":1 , "left":2 , "right":3};
+if(typeof arguments[1] == "number")this.Direction = arguments[1];
+if(typeof arguments[2] == "number")this.Step = arguments[2];
+if(typeof arguments[3] == "number")this.Width = arguments[3];
+if(typeof arguments[4] == "number")this.Height = arguments[4];
+if(typeof arguments[5] == "number")this.Timer = arguments[5];
+if(typeof arguments[6] == "number")this.DelayTime = arguments[6];
+if(typeof arguments[7] == "number")this.WaitTime = arguments[7];
+if(typeof arguments[8] == "number")this.ScrollStep = arguments[8]
+this.ID.style.overflow = this.ID.style.overflowX = this.ID.style.overflowY = "hidden";
+this.ID.noWrap = true;
+this.IsNotOpera = (navigator.userAgent.toLowerCase().indexOf("opera") == -1);
+if(arguments.length >= 7)this.Start();
+}
+srcMarquee.prototype.Start = function(){
+if(this.ID == -1)return;
+if(this.WaitTime < 800)this.WaitTime = 800;
+//if(this.Timer < 20)this.Timer = 20;
+if(this.Width == 0)this.Width = parseInt(this.ID.style.width);
+if(this.Height == 0)this.Height = parseInt(this.ID.style.height);
+if(typeof this.Direction == "string")this.Direction = this.DirectionArray[this.Direction.toString().toLowerCase()];
+this.HalfWidth = Math.round(this.Width / 2);
+this.BakStep = this.Step;
+this.ID.style.width = this.Width;
+this.ID.style.height = this.Height;
+if(typeof this.ScrollStep != "number")this.ScrollStep = this.Direction > 1 ? this.Width : this.Height;
+var msobj = this;
+var timer = this.Timer;
+var delaytime = this.DelayTime;
+var waittime = this.WaitTime;
+msobj.StartID = function(){msobj.Scroll()}
+msobj.Continue = function(){
+if(msobj.MouseOver == 1){
+setTimeout(msobj.Continue,delaytime);
+     }
+     else{ clearInterval(msobj.TimerID);
+msobj.CTL = msobj.Stop = 0;
+msobj.TimerID = setInterval(msobj.StartID,timer);
+     }
+    }
+msobj.Pause = function(){
+msobj.Stop = 1;
+clearInterval(msobj.TimerID);
+setTimeout(msobj.Continue,delaytime);
+    }
+msobj.Begin = function(){
+   msobj.ClientScroll = msobj.Direction > 1 ? msobj.ID.scrollWidth : msobj.ID.scrollHeight;
+   if((msobj.Direction <= 1 && msobj.ClientScroll <msobj.Height) || (msobj.Direction > 1 && msobj.ClientScroll <msobj.Width))return;
+   msobj.ID.innerHTML += msobj.ID.innerHTML;
+   msobj.TimerID = setInterval(msobj.StartID,timer);
+   if(msobj.ScrollStep < 0)return;
+   msobj.ID.onmousemove = function(event){
+       if(msobj.ScrollStep == 0 && msobj.Direction > 1){
+var event = event || window.event;
+if(window.event){
+if(msobj.IsNotOpera){msobj.EventLeft = event.srcElement.id == msobj.ID.id ? event.offsetX - msobj.ID.scrollLeft : event.srcElement.offsetLeft - msobj.ID.scrollLeft + event.offsetX;}
+else{msobj.ScrollStep = null;return;}
+}
+else{msobj.EventLeft = event.layerX - msobj.ID.scrollLeft;}
+msobj.Direction = msobj.EventLeft > msobj.HalfWidth ? 3 : 2;
+msobj.AbsCenter = Math.abs(msobj.HalfWidth - msobj.EventLeft);
+msobj.Step = Math.round(msobj.AbsCenter * (msobj.BakStep*2) / msobj.HalfWidth);
+}
+}
+msobj.ID.onmouseover = function(){
+if(msobj.ScrollStep == 0)return;
+msobj.MouseOver = 1;
+clearInterval(msobj.TimerID);
+}
+msobj.ID.onmouseout = function(){
+if(msobj.ScrollStep == 0){
+if(msobj.Step == 0)msobj.Step = 1;
+return;
+}
+msobj.MouseOver = 0;
+if(msobj.Stop == 0){
+clearInterval(msobj.TimerID);
+msobj.TimerID = setInterval(msobj.StartID,timer);
+}}}
+setTimeout(msobj.Begin,waittime);
+}
+srcMarquee.prototype.Scroll = function(){
+switch(this.Direction){
+case 0:
+this.CTL += this.Step;
+if(this.CTL >= this.ScrollStep && this.DelayTime > 0){
+this.ID.scrollTop += this.ScrollStep + this.Step - this.CTL;
+this.Pause();
+return;
+}
+else{
+if(this.ID.scrollTop >= this.ClientScroll){this.ID.scrollTop -= this.ClientScroll;}
+this.ID.scrollTop += this.Step;
+}
+break;
+case 1:
+this.CTL += this.Step;
+if(this.CTL >= this.ScrollStep && this.DelayTime > 0){
+this.ID.scrollTop -= this.ScrollStep + this.Step - this.CTL;
+this.Pause();
+return;
+}
+else{
+if(this.ID.scrollTop <= 0){this.ID.scrollTop += this.ClientScroll;}
+this.ID.scrollTop -= this.Step;
+}
+break;
+case 2:
+this.CTL += this.Step;
+if(this.CTL >= this.ScrollStep && this.DelayTime > 0){
+this.ID.scrollLeft += this.ScrollStep + this.Step - this.CTL;
+this.Pause();
+return;
+}
+else{
+if(this.ID.scrollLeft >= this.ClientScroll){this.ID.scrollLeft -= this.ClientScroll;}
+this.ID.scrollLeft += this.Step;
+}
+break;
+case 3:
+this.CTL += this.Step;
+if(this.CTL >= this.ScrollStep && this.DelayTime > 0){
+this.ID.scrollLeft -= this.ScrollStep + this.Step - this.CTL;
+this.Pause();
+return;
+}
+else{
+if(this.ID.scrollLeft <= 0){this.ID.scrollLeft += this.ClientScroll;}
+this.ID.scrollLeft -= this.Step;
+}
+break;
+}
+} 
+</script>
+
+<div id="Scroll">
+  	
+<div class="rsf_notice" id="notice_name" style="max-width:75px; overflow:hidden; text-align:right;">公告：</div>
+     
+    <div id="ScrollMe" style="overflow: hidden; height: 20px; white-space: nowrap; word-wrap: normal; width: 546px;">
+        <a href="" target="_blank" style="">在网络推广时代,没有推广金子就是废物,有了流量网上什么产品都可以变为现金,如果你能把网站仅仅几个软件利用好,我敢说你的网站流量会爆增,你的宝贝销售量将爆长,100%会卖疯,什么叫做接单接到手软,你也会体会到,免费营销软件下载发布产品信息,二手信息,求职招聘！
+百步论坛招募版主联系QQ-1330986397</a>
+    
+   
+        <a href="" target="_blank" style="">在网络推广时代,没有推广金子就是废物,有了流量网上什么产品都可以变为现金,如果你能把网站仅仅几个软件利用好,我敢说你的网站流量会爆增,你的宝贝销售量将爆长,100%会卖疯,什么叫做接单接到手软,你也会体会到,免费营销软件下载发布产品信息,二手信息,求职招聘！
+百步论坛招募版主联系QQ-1330986397</a>
+    
+ 
+    
+        <a href="" target="_blank" style="">在网络推广时代,没有推广金子就是废物,有了流量网上什么产品都可以变为现金,如果你能把网站仅仅几个软件利用好,我敢说你的网站流量会爆增,你的宝贝销售量将爆长,100%会卖疯,什么叫做接单接到手软,你也会体会到,免费营销软件下载发布产品信息,二手信息,求职招聘！
+百步论坛招募版主联系QQ-1330986397</a>
+    
+   
+        <a href="" target="_blank" style="">在网络推广时代,没有推广金子就是废物,有了流量网上什么产品都可以变为现金,如果你能把网站仅仅几个软件利用好,我敢说你的网站流量会爆增,你的宝贝销售量将爆长,100%会卖疯,什么叫做接单接到手软,你也会体会到,免费营销软件下载发布产品信息,二手信息,求职招聘！
+百步论坛招募版主联系QQ-1330986397</a>
+    
+ 
+    
+        <a href="" target="_blank" style="">在网络推广时代,没有推广金子就是废物,有了流量网上什么产品都可以变为现金,如果你能把网站仅仅几个软件利用好,我敢说你的网站流量会爆增,你的宝贝销售量将爆长,100%会卖疯,什么叫做接单接到手软,你也会体会到,免费营销软件下载发布产品信息,二手信息,求职招聘！
+百步论坛招募版主联系QQ-1330986397</a>
+    
+   
+        <a href="" target="_blank" style="">在网络推广时代,没有推广金子就是废物,有了流量网上什么产品都可以变为现金,如果你能把网站仅仅几个软件利用好,我敢说你的网站流量会爆增,你的宝贝销售量将爆长,100%会卖疯,什么叫做接单接到手软,你也会体会到,免费营销软件下载发布产品信息,二手信息,求职招聘！
+百步论坛招募版主联系QQ-1330986397</a>
+    
+ 
+    
+        <a href="" target="_blank" style="">在网络推广时代,没有推广金子就是废物,有了流量网上什么产品都可以变为现金,如果你能把网站仅仅几个软件利用好,我敢说你的网站流量会爆增,你的宝贝销售量将爆长,100%会卖疯,什么叫做接单接到手软,你也会体会到,免费营销软件下载发布产品信息,二手信息,求职招聘！
+百步论坛招募版主联系QQ-1330986397</a>
+    
+   
+        <a href="" target="_blank" style="">在网络推广时代,没有推广金子就是废物,有了流量网上什么产品都可以变为现金,如果你能把网站仅仅几个软件利用好,我敢说你的网站流量会爆增,你的宝贝销售量将爆长,100%会卖疯,什么叫做接单接到手软,你也会体会到,免费营销软件下载发布产品信息,二手信息,求职招聘！
+百步论坛招募版主联系QQ-1330986397</a>
+    
+ 
+    </div>
+ </div>
+<script>
+var iMode = parseInt('2');
+var iDirection = parseInt('3')-1;
+
+var iStep = 1;
+var noticName = document.getElementById('notice_name').offsetWidth+3;
+
+var iWidth = parseInt('600') - noticName;
+var iHeight = 20;
+
+var iTimer = parseInt('35');
+iTimer = (iTimer == 0)?35:iTimer;
+
+var iDelayTime = parseInt('3')*1000;
+iDelayTime = (iDelayTime == 0)?3:iDelayTime;
+
+var iWaitTime = parseInt('3')*1000;
+iWaitTime = (iWaitTime == 0)?3:iWaitTime;
+
+var iScrollStep = parseInt('50');
+iScrollStep = (iScrollStep == 0)?600:iScrollStep;
+
+if(iDirection == 0 ||iDirection == 1){
+iScrollStep = 20;	
+};
+
+if(iMode == 2){
+iScrollStep = 30;
+iDelayTime = 30;	
+};
+
+new srcMarquee("ScrollMe",iDirection,iStep,iWidth,iHeight,iTimer,iDelayTime,iWaitTime,iScrollStep);
+
+var iirsfWidth = document.getElementById('hd').scrollWidth;
+var birsfMaLeft= parseInt((iirsfWidth - (iWidth <= 0?500:iWidth))/2);
+document.getElementById('rsf_hdtp_pp').style.marginLeft = birsfMaLeft + 'px';
+window.onresize = function(){
+var iirsfWidth = document.getElementById('hd').scrollWidth;
+var birsfMaLeft= parseInt((iirsfWidth - (iWidth <= 0?500:iWidth))/2);
+document.getElementById('rsf_hdtp_pp').style.marginLeft = birsfMaLeft + 'px';
+};
+</script> 
+
+
+</div>
+
+<!--end-->
+
+<!--begin底部滚条-->
+<style type="text/css">
+#demo,#marquee1 {position:fixed;bottom:0;height:25px;overflow:hidden;z-index:9999;line-height:25px;background:#000;filter: Alpha(Opacity=85, Style=0);opacity: 0.85;font-size: 12px;text-align:center;}
+#indemo {float:left;width: 800%;}
+#demo1 {float:left;}
+#demo1 a{float:left;margin-right:30px;}
+#demo2 {float:left;}
+#marquee1 {right:0;width:3.8%;text-align:center;}
+</style>
+<div id="demo"><div id="indemo"><div id="demo1"><a title="【百步论坛】广告火热招中！QQ：1330986397" href="http://www.baibuml.com" style="color:#FFF
+" target="_blank">【百步论坛】广告火热招中！QQ：1330986397</a>
+<a title="【百步论坛】广告火热招中！QQ：1330986397" href="http://www.baibuml.com" style="color:#FF0000
+" target="_blank">【百步论坛】广告火热招中！QQ：1330986397</a>
+<a title="【百步论坛】广告火热招中！QQ：1330986397" href="http://www.baibuml.com" style="color:#FFFF00
+" target="_blank">【百步论坛】广告火热招中！QQ：1330986397</a>
+<a title="【百步论坛】广告火热招中！QQ：1330986397" href="http://www.baibuml.com" style="color:#00C400
+" target="_blank">【百步论坛】广告火热招中！QQ：1330986397</a>
+<a title="【百步论坛】广告火热招中！QQ：1330986397" href="http://www.baibuml.com" style="color:#FF00FF
+" target="_blank">【百步论坛】广告火热招中！QQ：1330986397</a>
+<a title="【百步论坛】广告火热招中！QQ：1330986397" href="http://www.baibuml.com" style="color:#FFF
+" target="_blank">【百步论坛】广告火热招中！QQ：1330986397</a>
+<a title="【百步论坛】广告火热招中！QQ：1330986397" href="http://www.baibuml.com" style="color:#E90080
+" target="_blank">【百步论坛】广告火热招中！QQ：1330986397</a>
+<a title="【百步论坛】广告火热招中！QQ：1330986397" href="http://www.baibuml.com" style="color:#78DDFF" target="_blank">【百步论坛】广告火热招中！QQ：1330986397</a>
+
+</div><div id="demo2"><a title="【百步论坛】广告火热招中！QQ：1330986397" href="http://www.baibuml.com" style="color:#FFF
+" target="_blank">【百步论坛】广告火热招中！QQ：1330986397</a>
+<a title="【百步论坛】广告火热招中！QQ：1330986397" href="http://www.baibuml.com" style="color:#FF0000
+" target="_blank">【百步论坛】广告火热招中！QQ：1330986397</a>
+<a title="【百步论坛】广告火热招中！QQ：1330986397" href="http://www.baibuml.com" style="color:#FFFF00
+" target="_blank">【百步论坛】广告火热招中！QQ：1330986397</a>
+<a title="【百步论坛】广告火热招中！QQ：1330986397" href="http://www.baibuml.com" style="color:#00C400
+" target="_blank">【百步论坛】广告火热招中！QQ：1330986397</a>
+<a title="【百步论坛】广告火热招中！QQ：1330986397" href="http://www.baibuml.com" style="color:#FF00FF
+" target="_blank">【百步论坛】广告火热招中！QQ：1330986397</a>
+<a title="【百步论坛】广告火热招中！QQ：1330986397" href="http://www.baibuml.com" style="color:#FFF
+" target="_blank">【百步论坛】广告火热招中！QQ：1330986397</a>
+<a title="【百步论坛】广告火热招中！QQ：1330986397" href="http://www.baibuml.com" style="color:#E90080
+" target="_blank">【百步论坛】广告火热招中！QQ：1330986397</a>
+<a title="【百步论坛】广告火热招中！QQ：1330986397" href="http://www.baibuml.com" style="color:#78DDFF" target="_blank">【百步论坛】广告火热招中！QQ：1330986397</a>
+
+</div></div></div>
+<div id="marquee1"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1330986397&amp;site" style="color:#E6E912;">联系</a></div>
+<script>
+<!--
+var speed=25;
+var tab=document.getElementById("demo");
+var tab1=document.getElementById("demo1");
+var tab2=document.getElementById("demo2");
+tab2.innerHTML=tab1.innerHTML;
+function Marquee(){
+if(tab2.offsetWidth-tab.scrollLeft<=0)
+tab.scrollLeft-=tab1.offsetWidth
+else{
+tab.scrollLeft++;
+}
+}
+var MyMar=setInterval(Marquee,speed);
+tab.onmouseover=function() {clearInterval(MyMar)};
+tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+-->
+</script>
+<!--end-->
+
+
+
   </body>
 </html>
